@@ -1,1 +1,26 @@
-!
+        body {
+        background-color: antiquewhite;
+        background-image: url("/—Pngtree—blue\ happy\ birthday\ watercolor\ illustration_4695435.png");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+    
+    p {
+        border: 3px solid rgb(216, 146, 146);
+        padding: 15px;
+    }
+    
+    h2 {
+        text-align: center;
+    }
+    
+    #birthdate,
+    #luckydate {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+    .bttn {
+        padding-top: 10px;
