@@ -3,33 +3,47 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>lucky birthday</title>
+
     <link rel="stylesheet" href="style.css">
+    <title>Birthday lucky</title>
 </head>
 
 <body>
+    <nav>
+        <h1>Is your Birthday lucky?</h1>
+    </nav>
+    <header>
+        <img src="/00687C.jpg" alt="birthday">
+    </header>
+    <section class="main">
+        <input id="date" type='number' placeholder="enter your birth date">
+        <input id="month" type="number" placeholder="enter your birth month">
+        <input id="year" type="number" placeholder="enter your birth year">
+    </section>
+    <section class="main-2">
+        <input id='lucky' type="number" placeholder="what is your lucky number?">
 
-    <h1 style="text-align: center; text-decoration-line: underline;text-shadow: 10px;text-decoration-color: rgb(125, 97, 151);  font-size: 250%; font-style: inherit;">IS YOUR BIRTHDAY LUCKY ? </h1>
-
-    <div class="container">
-
-        <h2 id="tx">Enter Your Birthdate </h2>
-        <input id="birthdate"></input>
-
-        <h2 id="tx">Enter Your Lucky Number</h2>
-        <input id="luckydate">
-
-        <div class="bttn" style="text-align: center;">
-            <button id="finalenter" style="font-size: 20px;">Enter</button>
-        </div>
-
-    </div>
-
-    <div id="output"></div>
+    </section>
+    <button id="btn">Find Out</button>
 
 
+
+    <h1 id="print"></h1>
+
+
+
+    <footer class="footer">
+        <div class="footer-header">CONNECT WITH ME</div>
+        <ul>
+            <li class="list list-item-inline"><a class="link" href="">GITHUB</a></li>
+            <li class="list list-item-inline"><a class="link" href="">LINKEDIN</a></li>
+            <li class="list list-item-inline"><a class="link " href="">TWITTER</a></li>
+        </ul>
+    </footer>
+
+
+    <script src="app.js"></script>
 </body>
 
 </html>

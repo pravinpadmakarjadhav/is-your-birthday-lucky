@@ -1,26 +1,77 @@
-        body {
-        background-color: antiquewhite;
-        background-image: url("/—Pngtree—blue\ happy\ birthday\ watercolor\ illustration_4695435.png");
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
-    }
-    
-    p {
-        border: 3px solid rgb(216, 146, 146);
-        padding: 15px;
-    }
-    
-    h2 {
-        text-align: center;
-    }
-    
-    #birthdate,
-    #luckydate {
-        display: block;
-        margin-right: auto;
-        margin-left: auto;
-    }
-    
-    .bttn {
-        padding-top: 10px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url(/kym-mackinnon-eFRLnTHTvPQ-unsplash.jpg);
+}
+
+body {
+    max-width: 600px;
+    margin: auto;
+    background-color: #DBEAFE;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+nav {
+    color: white;
+    font-size: larger;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header img {
+    max-width: 100%;
+    height: auto;
+    margin: 3rem;
+}
+
+input {
+    padding: 10px;
+    border: 2px solid #DBEAFE;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 35px;
+    cursor: pointer;
+    border-radius: 5px;
+    color: white;
+    font-family: 'Redressed', cursive;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+.main-2 {
+    margin-top: 20px;
+    margin-right: 15px;
+    text-align: center;
+}
+
+#print {
+    padding-top: 20px;
+    text-align: center;
+    font-size: 64px;
+}
+
+.footer {
+    margin-top: 30px;
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.footer-header {
+    padding-bottom: 10px;
+}
+
+.list-item-inline {
+    display: inline;
+    padding: 0rem 0.5rem;
+}
+
+a {
+    color: #DBEAFE;
+    text-decoration: none;
+}
