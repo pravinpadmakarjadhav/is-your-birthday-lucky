@@ -2,13 +2,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-image: url(/kym-mackinnon-eFRLnTHTvPQ-unsplash.jpg);
 }
 
 body {
     max-width: 600px;
     margin: auto;
-    background-color: #DBEAFE;
+    background-color: skyblue;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
@@ -20,9 +19,10 @@ nav {
 }
 
 header img {
-    max-width: 100%;
-    height: auto;
-    margin: 3rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
 
 input {
@@ -35,8 +35,11 @@ button {
     padding: 10px 35px;
     cursor: pointer;
     border-radius: 5px;
-    color: white;
+    color: rgb(41, 86, 172);
     font-family: 'Redressed', cursive;
+    font-size: 13px;
+    line-height: 1.3;
+    letter-spacing: 0.29em;
 }
 
 button:hover {
@@ -49,8 +52,16 @@ button:hover {
     text-align: center;
 }
 
+.main-div {
+    font-size: 23px;
+    line-height: 1;
+    letter-spacing: 0.362em;
+    font-weight: 500;
+    display: grid;
+    margin-top: 1rem;
+}
+
 #print {
-    padding-top: 20px;
     text-align: center;
     font-size: 64px;
 }
@@ -64,6 +75,7 @@ button:hover {
 
 .footer-header {
     padding-bottom: 10px;
+    font-size: 25px;
 }
 
 .list-item-inline {
@@ -74,4 +86,9 @@ button:hover {
 a {
     color: #DBEAFE;
     text-decoration: none;
+}
+
+.text-center {
+    text-align: center;
+    margin: 2rem;
 }
