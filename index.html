@@ -2,37 +2,42 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="style.css">
-    <title>Birthday lucky</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Lucky Birthday</title>
 </head>
 
 <body>
-    <nav>
-        <h1>Is your Birthday lucky?</h1>
-    </nav>
     <header>
-        <img src="/00687C.jpg" alt="birthday">
+        <h1>Is your birthday Lucky?</h1>
+        <p class="github"><a href="" target="_blank">GitHub Repo</a></p>
     </header>
-    <section class="main">
-        <div class="main-div">
-            <input id="date" type='number' placeholder="enter your birth date">
-            <input id="month" type="number" placeholder="enter your birth month">
-            <input id="year" type="number" placeholder="enter your birth year">
-    </section>
-    <section class="main-2">
-        <input id='lucky' type="number" placeholder="what is your lucky number?">
 
-    </section>
-    <div class="text-center">
-        <button id="btn">Find Out</button>
+    <main>
 
-    </div>
 
-    <h1 id="print"></h1>
-    </div>
+        <form id="form">
+            <div class="bdate">
+                <p>Enter your birthdate(only digits)</p>
+                <input type="date" id="input-date" required />
+            </div>
+
+            <div class="lucky">
+                <p>Enter your lucky number</p>
+                <input type="number" id="input-lucky" min="0" required />
+            </div>
+
+            <button type="submit">Check</button>
+        </form>
+
+        <h3 id="result"></h3>
+        <p class="privacy">We won't store your personal details.<i class="fa fa-times"></i></p>
+    </main>
+
 
 
     <footer class="footer ">

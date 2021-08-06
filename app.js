@@ -1,22 +1,36 @@
-let userDate = document.querySelector('#date');
-let userMonth = document.querySelector('#month');
-let userYear = document.querySelector('#year');
-let userLuckyNumber = document.querySelector('#lucky');
-let btn = document.querySelector("#btn")
+let inputDate = document.querySelector("#input-date");
+let inputLucky = document.querySelector("#input-lucky");
+let formDate = document.querySelector("#form");
+let resultDiv = document.querySelector("#result");
+let icon = document.querySelector(".fa");
+let privacyDiv = document.querySelector(".privacy");
 
+icon.addEventListener("click", () => {
+    privacyDiv.style.display = "none";
+})
 
+form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    let sum = 0,
+        rem = 0;
 
-function clickHandler() {
-    let addDate = Number(userDate.value);
-    let addMonth = Number(userMonth.value);
-    let addYear = Number(userYear.value);
-    let addLuckyNumber = Number(userLuckyNumber.value);
-    let addAll = addDate + addMonth + addYear;
-    if (addAll % addLuckyNumber === 0) {
-        document.querySelector('#print').innerText = 'Your birthday is  lucky'
-    } else {
-        document.querySelector('#print').innerText = 'Your birthday is not lucky'
+    let date = inputDate.value.split('-').join('');
+    while (date !== 0) {
+        rem = date % 10;
+        sum += rem;
+        date = Math.floor(date / 10);
     }
-}
 
-btn.addEventListener('click', clickHandler)
+    if (sum % inputLucky.value === 0) {
+        resultDiv.style.display = 'block';
+
+        resultDiv.innerText = "Yay! Your birthdate is lucky. 😍";
+        resultDiv.style.backgroundColor = "#88fd97";
+    } else {
+        resultDiv.style.display = 'block';
+
+        resultDiv.innerText = "OOPS! Your birthdate is unlucky. 😓";
+        resultDiv.style.backgroundColor = "#ff2c2c";
+        resultDiv.style.color = "#000000";
+    }
+});
